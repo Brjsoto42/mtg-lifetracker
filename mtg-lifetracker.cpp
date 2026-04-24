@@ -39,10 +39,58 @@ int main() {
                 cin >> player4;
                 break;
             case 2:
+                int addChoice, addAmount;
                 cout << "Add Life to:\n";
+                cout << "1. " << player1 << "\n";
+                cout << "2. " << player2 << "\n";
+                cout << "3. " << player3 << "\n";
+                cout << "4. " << player4 << "\n";
+                cin >> addChoice;
+                cout << "Enter amount to add: ";
+                cin >> addAmount;
+                switch (addChoice) {
+                    case 1:
+                        life1 += addAmount;
+                        break;
+                    case 2:
+                        life2 += addAmount;
+                        break;
+                    case 3:
+                        life3 += addAmount;
+                        break;
+                    case 4:
+                        life4 += addAmount;
+                        break;
+                    default:
+                        cout << "Invalid player choice.\n";
+                }
                 break;
             case 3:
+                int subChoice, subAmount;
                 cout << "Subtract Life from:\n";
+                cout << "1. " << player1 << "\n";
+                cout << "2. " << player2 << "\n";
+                cout << "3. " << player3 << "\n";
+                cout << "4. " << player4 << "\n";
+                cin >> subChoice;
+                cout << "Enter amount to subtract: ";
+                cin >> subAmount;
+                switch (subChoice) {
+                    case 1:
+                        life1 -= subAmount;
+                        break;
+                    case 2:
+                        life2 -= subAmount;
+                        break;
+                    case 3:
+                        life3 -= subAmount;
+                        break;
+                    case 4:
+                        life4 -= subAmount;
+                        break;
+                    default:
+                        cout << "Invalid player choice.\n";
+                }
                 break;
             case 4:
                 cout << "Add Commander Damage to:\n";
